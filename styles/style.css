@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* variables */ 
+:root{
+    --main-color: #4f3e36;
+    --nav-color: #231f1d;
+    --form-color: #bf5513;
+    font: 14px 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: var(--main-color);
+    background-color: #4f3e36; /* for IE */
+}
+
+/* --- STYLING THE HEADER PART --- */
+
+header{
+    background-color: var(--nav-color);
+    background-color: #231f1d; /* for IE */
+    padding: 10px 0;
+}
+
+header ul{
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+}
+
+header ul li{
+    margin: 0 5px;
+}
+
+header ul a{
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid transparent;
+    transition: border .2s;
+}
+
+header ul a:hover{
+    border-color:white;
+}
+
+/* --- STYLING THE MAIN PART --- */
+
+main{
+    margin: 5vh 0;
+}
+
+main h1{
+    margin-bottom: 10px;
+}
+
+main .login,
+main .register{
+    width: 40%;
+    margin: 10px auto;
+    padding: 20px 0;
+    background-color: var(--form-color);
+    background-color: #bf5513; /* for IE */
+    border: 2px solid #fff;
+    border-radius: 6px;
+    text-align: center;
+}
+
+main .forms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .forms input{
+    width: 50%;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+main .forms button{
+    padding: 10px;
+    background-color: var(--main-color);
+    background-color: #231f1d; /* for IE */
+    border: none;
+    color: white;
+    margin-top: 10px;
+    font-size: .9rem;
+}
+
+main .forms button:hover{
+    background-color: #342f3e;
+    cursor: pointer;
+}
+
+/* --- STYLING THE FOOTER PART --- */
+
+footer{
+    text-align: center;
+}
