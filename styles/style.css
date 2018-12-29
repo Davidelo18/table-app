@@ -32,7 +32,7 @@ header{
 
 header ul{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     list-style-type: none;
 }
 
@@ -93,6 +93,7 @@ main .forms button{
     color: white;
     margin-top: 10px;
     font-size: .9rem;
+    transition: background-color .2s;
 }
 
 main .forms button:hover{
@@ -100,8 +101,42 @@ main .forms button:hover{
     cursor: pointer;
 }
 
+/* class created while unsuccessful sign in or sign up */
+.error{
+    color: var(--nav-color);
+    padding-bottom: 2px;
+    font-size: .9rem;
+    width: 80%;
+    margin: auto;
+}
+
+.error-sgn{
+    border: 3px solid var(--nav-color);
+    border: 3px solid #231f1d; /* for IE */
+}
+
 /* --- STYLING THE FOOTER PART --- */
 
 footer{
     text-align: center;
+}
+
+@media screen and (max-width: 960px){
+    main .login,
+    main .register{
+        width: 65%;
+    }
+
+    main .forms input{width: 70%}
+}
+
+@media screen and (max-width: 720px){
+    :root{font-size: 13px}
+
+    main .login,
+    main .register{
+        width: 90%;
+    }
+
+    main .forms input{width: 85%}
 }

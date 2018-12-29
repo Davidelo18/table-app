@@ -12,17 +12,17 @@
         <nav>
             <ul>
                 <li><a href="index.php">Logowanie</a></li>
-                <li><a href="register.php">Rejestracja</a></li>
+                <li><a href="rejestracja.php">Rejestracja</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div id="login" class="login">
             <h1>Logowanie</h1>
-            <form class="forms" action="includes/login.php" method="post">
-                <input type="text" name="userid" placeholder="Nazwa użytkownika">
-                <input type="password" name="passid" placeholder="Hasło">
-                <button type="submit" name="login-submit">Zaloguj</button>
+            <form class="forms" action="includes/signin.php" method="post">
+                <input type="text" name="username" placeholder="Nazwa użytkownika">
+                <input type="password" name="passwd" placeholder="Hasło">
+                <button type="submit" name="login-submit">Zaloguj się</button>
             </form>
         </div>
     </main>
